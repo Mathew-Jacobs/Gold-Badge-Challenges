@@ -18,7 +18,7 @@ namespace Challenge_7
             {
                 TotalTickets += food.UsedTickets;
                 TotalCost += food.TotalCost;
-                MiscCosts += miscCostPerPerson;
+                MiscCosts += miscCostPerPerson*food.UsedTickets;
             }
             TotalCost += MiscCosts;
         }

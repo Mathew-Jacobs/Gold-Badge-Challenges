@@ -10,7 +10,7 @@ namespace Challenge_7
     {
         public Party() { }
 
-        public Party(List<Booth> booths)
+        public Party(int partyID, List<Booth> booths)
         {
             Booths = booths;
             foreach (Booth booth in booths)
@@ -18,10 +18,13 @@ namespace Challenge_7
                 TotalTickets += booth.TotalTickets;
                 TotalCost += booth.TotalCost;
             }
+            PartyID = partyID;
         }
 
         public List<Booth> Booths { get; set; }
+        public int PartyID { get; set; }
         public int TotalTickets { get; set; }
         public decimal TotalCost { get; set; }
+
     }
 }

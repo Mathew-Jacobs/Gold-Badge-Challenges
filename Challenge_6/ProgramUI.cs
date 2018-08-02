@@ -222,7 +222,7 @@ namespace Challenge_6
             }
         }
 
-        public void UpdateCar(Car editCar, int editChoice1to6)
+        private void UpdateCar(Car editCar, int editChoice1to6)
         {
             switch (editChoice1to6)
             {

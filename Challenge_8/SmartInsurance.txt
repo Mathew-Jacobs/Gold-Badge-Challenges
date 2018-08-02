@@ -11,4 +11,3 @@ poor driving skills, their premium will be higher.
 
 Note: This is very open ended and allows you to be creative. A base premium cost can be
 an estimated number and a premium is the monthly amount that a driver would pay.
-

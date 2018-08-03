@@ -155,5 +155,36 @@ namespace Challenge_2
             }
             return claimTypeFix;
         }
+
+        public void MenuSetup(List<Claim> claimList)
+        {
+            //ClaimID Type    Description Amount      DateOfAccident DateOfClaim
+            Console.Clear();
+            int row = 3;
+            Console.SetCursorPosition(0, 1);
+            Console.Write("ClaimID");
+            Console.SetCursorPosition(29, 1);
+            Console.Write("| Number");
+            Console.SetCursorPosition(39, 1);
+            Console.Write("| Discription");
+            Console.SetCursorPosition(69, 1);
+            Console.Write("| Price");
+            Console.WriteLine("\n----------------------------------------------------------------------------------");
+            foreach (Claim menu in claimList)
+            {
+                Console.SetCursorPosition(0, row);
+                Console.Write(menu.MealName);
+                Console.SetCursorPosition(30, row);
+                Console.Write(menu.MealNumber);
+                Console.SetCursorPosition(40, row);
+                Console.Write(menu.MealDescription);
+                Console.SetCursorPosition(70, row);
+                Console.Write(menu.MealPrice);
+
+                row += 2;
+            }
+            Console.WriteLine("\n----------------------------------------------------------------------------------");
+            Console.WriteLine("\n");
+        }
     }
 }
